@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{   
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: sans-serif;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        margin: 20px;
+    }
+    .box{
+        display: flex;
+    }
+    .pricing-tag{
+        height: 400px;
+        width: 300px;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .title-section{
+        background: #ef476f;
+        padding: 10px;
+        transition-property:  1s;
+        border-bottom: 1px solid #ef476f ;
+    }
+    h3{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    h2{
+        text-align: center;
+        padding: 8px;
+        font-size: 2rem;
+    }
+    p{
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        padding-top: 10px;
+    }
+    .content-section > ul> li{
+           text-align: center;
+           border-bottom: 2px solid #f2f2f2;
+           padding: 10px;
+    }
+    .button{
+        border: 1px solid #ef476f;
+        width: 5rem;
+         height: 2.4rem;
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        margin-left: 108px;
+        margin-top: 10px;
+        transition-property: 1s;
+        font-weight: 600;
+
+    }
+    a{
+        color: #ef476f;
+        transition: all;
+    }
+    .outerdiv{
+        height: 143px;
+        width: 40px;
+        border-right: 1px solid;
+        border-top: 1px solid;
+        transform: skewY( 45deg);
+        position: relative;
+        top: 20px;
+        right: 0px;
+        background: #ef476f;
+    }
+   .outerdiv:hover{
+    background-color: #66ffcc;
+   }
+   .outerdiv2{
+    height: 300px;
+    width: 40px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    transform: skewY(-45deg);
+    position: relative;
+    top: 80px;
+    right: 40px;
+    background: white;
+    z-index: -3}
+    
+   .outerdiv2:hover{
+    background-color: #66ffcc;
+   }
+   .outerdiv3{
+        height: 143px;
+        width: 40px;
+        border-right: 1px solid;
+        border-top: 1px solid;
+        transform: skewY( 45deg);
+        position: relative;
+        top: 20px;
+        right: 0px;
+        background: #ef476f;
+   }
+   .outerdiv4{
+    height: 300px;
+    width: 40px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    transform: skewY(-45deg);
+    position: relative;
+    top: 80px;
+    right: 40px;
+    background: white;
+    z-index: -3;
+   } 
+   .pricing-tag:hover .title-section,
+      .pricing-tag:hover .button,
+      .pricing-tag:hover a,
+      .box:hover .outerdiv{
+        background-color: #66ffcc;
+        color: white;
+      }
+
+      .pricing-tag:hover .title-section,
+      .pricing-tag:hover .button,
+      .pricing-tag:hover a,
+      .mediumplan:hover .outerdiv3 {
+        background-color: #66ffcc;
+        color: white;
+      }
+
+      .mediumplan {
+        display: flex;
+      }
+      @media (min-width: 360px) and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .outerdiv {
+    height: 127px;
+    width: 40px;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    transform: skewY(45deg);
+    position: relative;
+    top: 19px;
+    right: 0px;
+    background:  #ef476f;
+  }
+
+  .outerdiv2 {
+    height: 300px;
+    width: 40px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    transform: skewY(-45deg);
+    position: relative;
+    top: 80px;
+    right: 37px;
+    background-color: #f2f2f2;
+    z-index: -3;
+  }
+
+  .outerdiv3 {
+    height: 127px;
+    width: 40px;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    transform: skewY(45deg);
+    position: relative;
+    top: 20px;
+    right: 0px;
+    background: #ef476f;
+  }
+
+  .outerdiv4 {
+    height: 300px;
+    width: 40px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    transform: skewY(-45deg);
+    position: relative;
+    top: 80px;
+    right: 40px;
+    background-color: #f2f2f2;
+    z-index: -3;
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box">
+         <div class="pricing-tag">
+           <div class="title-section">
+             <h3>pricing plan</h3>
+             <div class="price">
+               <h2>$12.99</h2>
+               <p>per month</p>
+            </div>
+         </div>
+
+             <div class="content-section">
+                 <ul>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                   <li>Lorem ipsum</li>
+                </ul>
+             </div>
+            <div class="button">
+                <a href="#">Sign up</a>
+            </div>
+          </div>
+          <div class="outerdiv"></div>
+          <div class="outerdiv2"></div>
+          </div>
+         <div class="mediumplan">
+            <div class="pricing-tag">
+              <div class="title-section">
+                <h3>pricing plan</h3>
+                <div class="price">
+                  <h2>$22.99</h2>
+                  <p>per month</p>
+                </div>
+              </div>
+    
+              <div class="content-section">
+                <ul>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum</li>
+                </ul>
+              </div>
+              <div class="button">
+                <a href="#">Sign up</a>
+              </div>
+            </div>
+            <div class="outerdiv3"></div>
+            <div class="outerdiv4"></div>
+          </div>
+        
+      </div>
+
+      
+</body>
+</html>
